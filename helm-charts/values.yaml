@@ -179,10 +179,10 @@ wso2:
             periodSeconds: 20
             failureThreshold: 5
 
-        # configs:
-        #   tls:
-            # certificatesSecret: "management-server-cert"
-            # fileName: "certificate.crt"
+        configs:
+          tls:
+            certificatesSecret: "management-server-cert"
+            fileName: "certificate.crt"
           # adapters:
           #   - name: adapter-1
           #     certificatesSecret: "adapter-1-cert"
