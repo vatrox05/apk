@@ -365,11 +365,11 @@ wso2:
             strategy: Recreate
             imagePullPolicy: Always
             image: wso2/router:0.0.1-m6
-            # configs:
-            #   tls:
-            #     certificatesSecret: "router-cert"
-            #     certKeyFilename: ""
-            #     certFilename: ""
+            configs:
+              tls:
+                certificatesSecret: "router-cert"
+                certKeyFilename: ""
+                certFilename: ""
           enforcer:
             npi: enforcer-npi
             resources:
