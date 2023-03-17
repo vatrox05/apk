@@ -392,11 +392,11 @@ wso2:
             image: wso2/enforcer:latest
             security:
               sslHostname: "enforcer"
-            # configs:
-            #   tls:
-            #     certificatesSecret: "router-cert"
-            #     certKeyFilename: ""
-            #     certFilename: ""
+            configs:
+              tls:
+                certificatesSecret: "router-cert"
+                certKeyFilename: ""
+                certFilename: ""
             #   filters:
             #     - className: org.wso2.micro.gateway.enforcer.filter.RequestFilter
             #       position: 1
