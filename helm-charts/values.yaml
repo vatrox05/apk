@@ -151,7 +151,7 @@ wso2:
             periodSeconds: 20
             failureThreshold: 5
           strategy: Recreate
-          replicas: 0
+          replicas: 1
           imagePullPolicy: IfNotPresent
           # TODO update image
           image: chanaka3d/portals:linux1.0.0
@@ -265,10 +265,10 @@ wso2:
           image: wso2/adapter:latest
           security:
             sslHostname: "adapter"
-        # configs:
-          # apiNamespaces:
-          #   - "dataplane-1"
-          #   - "dataplane-2"
+        configs:
+          apiNamespaces:
+            - "dataplane-1"
+            - "dataplane-2"
           # tls:
           #   certificatesSecret: "adapter-cert"
           #   certKeyFilename: ""
