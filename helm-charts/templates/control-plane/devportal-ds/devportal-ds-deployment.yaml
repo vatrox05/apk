@@ -30,6 +30,7 @@ spec:
   template:
     metadata:
       labels:
+        #networkPolicyId: {{ .Values.wso2.apk.cp.devportal.deployment.npi }}      
 {{ include "apk-helm.pod.selectorLabels" (dict "root" . "app" .Values.wso2.apk.cp.devportal.appName ) | indent 8}}
     spec:
       initContainers:

@@ -18,4 +18,8 @@
 3. Execute ``` helm dependency build ``` command to download the dependent charts.
 4. Now execute ```helm install apk-test . -n apk``` to install the APK components.
 
+## Busibox DNS problem 
+* [DNS bad address](https://unix.stackexchange.com/questions/124283/busybox-ping-ip-works-but-hostname-nslookup-fails-with-bad-address)
+
+
 
