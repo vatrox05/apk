@@ -269,10 +269,10 @@ wso2:
           apiNamespaces:
             - "dataplane-1"
             - "dataplane-2"
-          # tls:
-          #   certificatesSecret: "adapter-cert"
-          #   certKeyFilename: ""
-          #   certFilename: ""
+          tls:
+            certificatesSecret: "adapter-cert"
+            certKeyFilename: ""
+            certFilename: ""
       ratelimiter:
         enabled: false
         appName: "ratelimiter"
